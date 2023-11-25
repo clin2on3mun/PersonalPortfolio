@@ -1,19 +1,26 @@
-import React from "react";
-
+import React, { useRef } from "react";
+import { FaBarsStaggered, FaXmark} from "react-icons/fa6";
+import './header.css';
 const Navbar = ()=>{
-
+    const menuRef = useRef(null)
+    const showMenuBar= ()=>{
+            menuRef.current.classList.toggle('responsive-menu')
+    }
     return(
         <header>
-            <nav>
+            <nav className="nav-menu">
                 <h1> Logo </h1>
-                <ul>
-                 <li><a href="#Home"></a>Home</li>
-                 <li><a href="#About"></a>About</li>
-                 <li><a href="#projects"></a>Projects</li>
-                 <li><a href="#skills"></a>Skills</li>
-                 <li><a href="#contact"></a>Contact</li>
+                <ul className="nav-links" ref={menuRef}>
+                <button onClick={showMenuBar} className="nav-btn close"><FaXmark/></button>
+                 <li><a href="#Home" onClick={showMenuBar}>Home</a></li>
+                 <li><a href="#About" onClick={showMenuBar}>About</a></li>
+                 <li><a href="#projects"onClick={showMenuBar}>Projects</a></li>
+                 <li><a href="#skills" onClick={showMenuBar}>Skills</a></li>
+                 <li><a href="#contact" onClick={showMenuBar} >Contact</a></li>
                 </ul>
+                <button onClick={showMenuBar} className="nav-btn hamburg-menu"><FaBarsStaggered/></button>
             </nav>
+           
         </header>
     )
 }
