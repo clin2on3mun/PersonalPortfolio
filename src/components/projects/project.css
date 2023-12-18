@@ -1,0 +1,101 @@
+#projects {
+  margin: 3rem 0;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.projects {
+  display: grid;
+  gap: 15px;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.img-project {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.img-project img {
+  overflow: hidden;
+  width: 100%;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.project-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--secondary-color);
+}
+
+.project-tech {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+.projects h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Assistant', sans-serif;
+}
+
+.project-content p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  line-height: var(--line-height2);
+}
+
+@media only screen and (max-width: 768px) {
+  #projects {
+    padding: 0 1.3rem;
+  }
+
+  .projects {
+    grid-auto-flow: row;
+    grid-template-columns: minmax(calc(30rem - 300px), 1fr);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .projects {
+    grid-template-columns: 3fr 3fr;
+  }
+}
+
+@media only screen and (min-width: 1130px) {
+  .projects {
+    grid-template-columns: repeat(3, 3fr);
+    max-width: 90rem;
+  }
+}

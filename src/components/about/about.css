@@ -1,0 +1,111 @@
+#about {
+  display: grid;
+  background-color: var(--third-color);
+  grid-auto-flow: column;
+  justify-content: center;
+  padding: 3rem 3rem;
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+.about-text {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 1.8rem;
+  line-height: var(--line-height-3);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.about-me {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: var(--line-height2);
+}
+
+.resume-content {
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 1rem 2rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+.icon-download {
+  font-size: 1.2rem;
+}
+
+.resume-button-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+}
+
+.skills {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.size {
+  font-size: 2em;
+  text-align: center;
+}
+
+.list-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 6rem;
+  border: 1px solid;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  padding: 0.8rem;
+}
+
+.skill-name {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.skill-header {
+  font-size: 1.3rem;
+  font-weight: 550;
+  font-family: sans-serif;
+  color: var(--secondary-color);
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #about {
+    padding: 3rem 3%;
+    grid-auto-flow: row;
+    justify-content: center;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .resume {
+    align-self: start;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .about-me {
+    max-width: 37rem;
+  }
+}
