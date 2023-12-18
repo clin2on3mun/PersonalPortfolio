@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { FaBarsStaggered, FaXmark} from "react-icons/fa6";
-import './header.css';
+import './navbar.css';
 import { Link } from "react-scroll";
 const Navbar = ()=>{
     const links=[
