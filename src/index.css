@@ -8,13 +8,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 
 :root {
-  --primary-color: #FFF;
+  --primary-color: #fff;
   --secondary-color: #3e54ac;
-  --third-color: #F9F9F9;
+  --third-color: #f9f9f9;
+
   /* --fourth-color: #BFACE2; */
-  --line-height:1.5;
-  --line-height-3:1.1;
-  --line-height2:1.6;
+  --line-height: 1.5;
+  --line-height-3: 1.1;
+  --line-height2: 1.6;
 }
 
 * {
@@ -35,8 +36,9 @@ a {
 li {
   list-style-type: none;
 }
-footer.socials{
-   margin: 1rem 0;
-   justify-content: center;
-   align-items: center;
+
+footer.socials {
+  margin: 1rem 0;
+  justify-content: center;
+  align-items: center;
 }
