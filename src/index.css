@@ -1,23 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 
 :root {
-  --primary-color: #ECF2FF;
-  --secondary-color: #3E54AC
+  --primary-color: #FFF;
+  --secondary-color: #3e54ac;
+  --third-color: #F9F9F9;
+  /* --fourth-color: #BFACE2; */
+  --line-height:1.5;
+  --line-height-3:1.1;
+  --line-height2:1.6;
 }
 
-
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-body{
+
+body {
   background-color: var(--primary-color);
 }
- a{
+
+a {
   text-decoration: none;
- }
- li{
+}
+
+li {
   list-style-type: none;
- }
+}
+footer.socials{
+   margin: 1rem 0;
+   justify-content: center;
+   align-items: center;
+}
