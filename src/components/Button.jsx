@@ -10,7 +10,7 @@ const Button = ({link,classes,children})=>{
 Button.propTypes = {
    link: PropTypes.string,
    classes: PropTypes.string,
-   children: PropTypes.object,
+   children: PropTypes.any,
  };
 
 

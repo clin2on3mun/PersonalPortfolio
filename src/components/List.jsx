@@ -10,7 +10,7 @@ const List = ({className,style,children})=>{
 
 List.propTypes = {
   className: PropTypes.string,
-  style: PropTypes.string,
-  children: PropTypes.object,
+  style: PropTypes.any,
+  children: PropTypes.array,
 };
 export default List
