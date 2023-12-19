@@ -1,16 +1,21 @@
 import projects from '../data'
 import { FaRegEye, FaCode  } from "react-icons/fa";
+import { motion } from "framer-motion"
 import Button from '../Button';
 import './project.css'
 
 const Project= ()=>{
     console.log(projects)
     return (
-        <section id="projects">
+        <section id="projects"
+                        >
             <h2 className='about-text'>Projects</h2>
             <article className="projects">
                 {projects.map((project)=>(
-                    <div key={project.id} className="project">
+                    <motion.div key={project.id} className="project"
+                                            initial={{opacity: 0, x: -100}}
+                                            whileInView={{opacity:1, x: 0}}
+                                            transition={{duration:1}}>
                      <figure className='img-project'>   
                       <img src={project.imgSource} alt={project.title}/>
                      </figure> 
@@ -33,7 +38,7 @@ const Project= ()=>{
                       </Button>
                       </div>
                      </div> 
-                     </div>
+                     </motion.div>
                 ))}
                 </article>
         </section>
