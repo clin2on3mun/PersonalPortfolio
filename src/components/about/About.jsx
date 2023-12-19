@@ -18,7 +18,7 @@ const About = ()=>{
         <div className="about-me">
           <p style={{lineHeight:"1.8"}}>Hello! I&apos;m Munana, a passionate Full-stack Developer dedicated to creating exceptional digital experiences. With a strong foundation in technologies like JavaScript, React, Ruby on Rails, and more, I thrive on turning ideas into functional and user-friendly applications.</p>
           <p style={{lineHeight:"1.8", paddingTop:"10px"}}> My journey in web development has equipped me with problem-solving skills, attention to detail, and a keen eye for design. I am constantly learning and adapting to stay at the forefront of technology, ensuring that my work is both innovative and impactful.</p>
-          <p style={{lineHeight:"1.8", paddingTop:"10px"}}>In freetime i enjoy watching football games and hanging out with my friend</p>
+          <p style={{lineHeight:"1.8", paddingTop:"10px"}}>In my freetime i enjoy watching football games and hanging out with my friend</p>
           <p style={{lineHeight:"1.8", paddingTop:"10px"}}> If you like what you see, and you have a project that needs coding, don&apos;t hesitate to reach out! Let&apos;s create something remarkable together. Connect with me on through my socials or drop me an email at <span style={{color:"var(--secondary-color)", fontWeight:"700"}}>munanaclinton@gmail.com.</span></p>
         </div>
         <Button link="https://drive.google.com/file/d/1dhHfReb7SkNQ0d6ZGJVl79PTLaHIGBVV/view?usp=sharing"  classes="resume">
