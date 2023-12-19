@@ -42,3 +42,12 @@ footer.socials {
   justify-content: center;
   align-items: center;
 }
+
+footer .back {
+  color: var(--secondary-color);
+}
+
+footer .back:hover {
+  color: black;
+  cursor: pointer;
+}
