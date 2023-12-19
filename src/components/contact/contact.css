@@ -38,7 +38,7 @@
 }
 
 .text-area {
-  height: 5rem;
+  height: 6rem;
   resize: none;
 }
 
@@ -50,7 +50,9 @@
   color: var(--secondary-color);
   font-size: 1rem;
 }
-
+.form-control{
+  width: 25%;
+}
 @media only screen and (max-width: 768px) {
   #contact {
     padding: 0 1rem;
