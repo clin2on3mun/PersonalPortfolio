@@ -46,6 +46,14 @@
   font-size: 1.1rem;
 }
 
+.resume-content:hover,
+.btn-send:hover {
+  background-color: var(--secondary-color);
+  transition: background-color 400ms;
+  color: #fff;
+  cursor: pointer;
+}
+
 .skills {
   display: flex;
   gap: 12px;

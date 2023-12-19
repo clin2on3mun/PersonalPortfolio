@@ -31,6 +31,7 @@
   border-radius: 0.5rem;
   border: 1px solid #ad8b73;
   outline: none;
+  width: 25%;
 }
 
 .form-control:focus {
@@ -38,7 +39,7 @@
 }
 
 .text-area {
-  height: 5rem;
+  height: 6rem;
   resize: none;
 }
 

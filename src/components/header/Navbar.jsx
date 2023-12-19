@@ -24,7 +24,7 @@ const Navbar = ()=>{
     return(
         <header>
             <nav className="nav-menu">
-                <h1> Logo </h1>
+                <a href="#home"><h1>Munana Clinton</h1></a>
                 <ul className="nav-links" ref={menuRef}>
                     <button onClick={showMenuBar} className="nav-btn close"><FaXmark/></button>
                     
