@@ -1,4 +1,5 @@
 import { LiaCloudDownloadAltSolid } from "react-icons/lia"
+import { motion } from "framer-motion"
 import Button from "../Button"
 import List from "../List"
 import { FaHtml5, FaCss3, FaGitAlt, FaGithub, FaReact, FaDev } from "react-icons/fa6";
@@ -7,23 +8,30 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import './about.css'
 const About = ()=>{
    return( 
-   <section id="about">
-      <div className="about-content">
+   <section id="about"
+                   >
+      <motion.div className="about-content"
+                  initial={{opacity: 0, x:-100}}
+                  whileInView={{opacity:1, x:0}}
+                  transition={{duration:1}}>
         <h2 className="about-text">About</h2>
-        <p className="about-me">
-        Hello I’m a Full-stack developer! I can help you build a product , 
-        feature or website Look through some of my work and experience! 
-        If you like what you see and have a project you need coded, 
-        don’t hesitate to contact me.
-        </p>
+        <div className="about-me">
+          <p style={{lineHeight:"1.8"}}>Hello! I&apos;m Munana, a passionate Full-stack Developer dedicated to creating exceptional digital experiences. With a strong foundation in technologies like JavaScript, React, Ruby on Rails, and more, I thrive on turning ideas into functional and user-friendly applications.</p>
+          <p style={{lineHeight:"1.8", paddingTop:"10px"}}> My journey in web development has equipped me with problem-solving skills, attention to detail, and a keen eye for design. I am constantly learning and adapting to stay at the forefront of technology, ensuring that my work is both innovative and impactful.</p>
+          <p style={{lineHeight:"1.8", paddingTop:"10px"}}>In freetime i enjoy watching football games and hanging out with my friend</p>
+          <p style={{lineHeight:"1.8", paddingTop:"10px"}}> If you like what you see, and you have a project that needs coding, don&apos;t hesitate to reach out! Let&apos;s create something remarkable together. Connect with me on through my socials or drop me an email at <span style={{color:"var(--secondary-color)", fontWeight:"700"}}>munanaclinton@gmail.com.</span></p>
+        </div>
         <Button link="https://drive.google.com/file/d/1dhHfReb7SkNQ0d6ZGJVl79PTLaHIGBVV/view?usp=sharing"  classes="resume">
           <div className="resume-content">
             <LiaCloudDownloadAltSolid className="icon-download"/>
             <span className="resume-button-name">Resume</span>
           </div>
         </Button>   
-        </div>
-        <section id="skills">
+        </motion.div>
+        <motion.section id="skills"
+                        initial={{opacity: 0, x:100}}
+                        whileInView={{opacity:1, x:0}}
+                        transition={{duration:1}}>
            <section>
              <p className="skill-header">Language</p>
              <ul className="skills">
@@ -85,7 +93,7 @@ const About = ()=>{
              
             </section>
   
-        </section>    
+        </motion.section>    
     </section>
    )
 }
