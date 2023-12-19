@@ -31,6 +31,7 @@
   border-radius: 0.5rem;
   border: 1px solid #ad8b73;
   outline: none;
+  width: 25%;
 }
 
 .form-control:focus {
@@ -50,9 +51,7 @@
   color: var(--secondary-color);
   font-size: 1rem;
 }
-.form-control{
-  width: 25%;
-}
+
 @media only screen and (max-width: 768px) {
   #contact {
     padding: 0 1rem;

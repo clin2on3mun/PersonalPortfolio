@@ -5,9 +5,11 @@ nav {
   justify-content: space-between;
   padding: 0 5rem;
 }
-nav h1{
+
+nav h1 {
   font-family: 'Whisper', cursive;
 }
+
 header {
   height: 4.5rem;
   display: flex;

@@ -45,12 +45,15 @@
   font-family: 'Roboto', sans-serif;
   font-size: 1.1rem;
 }
-.resume-content:hover, .btn-send:hover{
-  background-color:var(--secondary-color);
+
+.resume-content:hover,
+.btn-send:hover {
+  background-color: var(--secondary-color);
   transition: background-color 400ms;
   color: #fff;
-  cursor:pointer;
+  cursor: pointer;
 }
+
 .skills {
   display: flex;
   gap: 12px;

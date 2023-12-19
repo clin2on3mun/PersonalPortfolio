@@ -1,5 +1,4 @@
 import { FiGithub } from "react-icons/fi";
-import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaAngellist } from "react-icons/fa";
 
