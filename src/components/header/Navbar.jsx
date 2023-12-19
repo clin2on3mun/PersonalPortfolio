@@ -26,8 +26,7 @@ const Navbar = ()=>{
             <nav className="nav-menu">
                 <a href="#home"><h1>Munana Clinton</h1></a>
                 <ul className="nav-links" ref={menuRef}>
-                    <button onClick={showMenuBar} className="nav-btn close"><FaXmark/></button>
-                    
+                    <li><button onClick={showMenuBar} className="nav-btn close"><FaXmark/></button></li>
                         {links.map((link, index)=>(
                         <li key={index}>
                          <Link 

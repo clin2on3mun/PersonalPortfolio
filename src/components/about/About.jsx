@@ -11,8 +11,8 @@ const About = ()=>{
    <section id="about"
                    >
       <motion.div className="about-content"
-                  initial={{opacity: 0, x:-100}}
-                  whileInView={{opacity:1, x:0}}
+                  initial={{opacity: 0, y:-100}}
+                  whileInView={{opacity:1, y:0}}
                   transition={{duration:1}}>
         <h2 className="about-text">About</h2>
         <div className="about-me">
@@ -29,8 +29,8 @@ const About = ()=>{
         </Button>   
         </motion.div>
         <motion.section id="skills"
-                        initial={{opacity: 0, x:100}}
-                        whileInView={{opacity:1, x:0}}
+                        initial={{opacity: 0, y:100}}
+                        whileInView={{opacity:1, y:0}}
                         transition={{duration:1}}>
            <section>
              <p className="skill-header">Language</p>
