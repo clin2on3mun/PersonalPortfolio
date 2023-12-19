@@ -56,10 +56,12 @@
   gap: 5px;
   color: var(--secondary-color);
 }
-.project-button:hover{
-  color:black;
-  cursor:pointer;
+
+.project-button:hover {
+  color: black;
+  cursor: pointer;
 }
+
 .project-tech {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
